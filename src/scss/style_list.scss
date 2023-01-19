@@ -1,0 +1,990 @@
+$bgColor: #f8f8f8;
+$bgCol: #ffffff;
+$text: #1b1c21;
+$containerTextColor: #7e7e82;
+$borderColor: #eaeaea;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'TT Lakes Regular';
+  background-color: $bgColor;
+  color: $text;
+  min-width: 320px;
+  height: 5000px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 88px;
+  margin-bottom: 24px;
+}
+
+.header__left-side > img {
+  display: none;
+}
+
+.header__right-side {
+  display: flex;
+  justify-content: space-between;
+}
+.header__left-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__hidden {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.main__header {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.main__header h1 {
+  margin-left: 12px;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  font-weight: 800;
+  font-family: 'TT Lakes Bold';
+}
+
+.main__services {
+  display: flex;
+  overflow: scroll;
+  margin-bottom: 24px;
+}
+
+.main__services::-webkit-scrollbar {
+  width: 0;
+}
+
+.main__services p {
+  display: flex;
+  flex-shrink: 0;
+  height: 40px;
+  padding: 16px;
+  margin-left: 16px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $containerTextColor;
+}
+
+.main__services p:hover {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  background-color: $bgCol;
+}
+
+.main__read-more {
+  display: inline-block;
+}
+
+.main__read-more__text p {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.read-more__arrow {
+  display: inline-flex;
+  align-items: baseline;
+  margin-left: 16px;
+}
+
+.read-more__arrow p {
+  font-weight: 600;
+}
+
+.arrows .rotate {
+  transform: rotate(180deg);
+}
+
+.main__repair h3 {
+  margin: 16px;
+}
+
+.main__repair h3 {
+  width: 320px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $containerTextColor;
+  font-weight: 200;
+}
+
+.repair__container {
+  display: flex;
+  overflow: hidden;
+}
+
+.repair__container-wrapper {
+  display: flex;
+  padding: 16px;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 240px;
+  height: 72px;
+  padding: 16px;
+  border: 1px solid $borderColor;
+  background-color: $bgCol;
+  border-radius: 6px;
+}
+
+.main__technical {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.main__technical h3 {
+  margin-left: 16px;
+  color: $containerTextColor;
+  width: 320px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 200;
+}
+
+.technical__container {
+  display: flex;
+  overflow: hidden;
+}
+
+.techniacal__container-wrapper {
+  display: flex;
+  padding: 16px;
+}
+
+.technical__info {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 240px;
+  height: 160px;
+  padding: 16px;
+  border: 1px solid $borderColor;
+  background-color: $bgCol;
+}
+
+.technical__info p {
+  color: $text;
+  font-weight: 600;
+  margin: 0;
+}
+
+.technical__info a {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 16px;
+}
+
+.main__price {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.main__price h3 {
+  margin-left: 16px;
+  color: $containerTextColor;
+  width: 320px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 200;
+}
+
+.price__container {
+  display: flex;
+  overflow: hidden;
+}
+
+.price__container-wrapper {
+  display: flex;
+  padding: 16px;
+}
+
+.price__items {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 200px;
+  border: 1px solid $borderColor;
+  background-color: $bgCol;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.price__items p {
+  color: $containerTextColor;
+  margin-bottom: 4px;
+}
+
+.price__items span {
+  color: $text;
+  margin-left: 16px;
+}
+
+.uslugi {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  margin: 16px 0;
+}
+
+.term {
+  display: flex;
+  justify-content: space-between;
+}
+
+.term__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.term img {
+  margin-right: 16px;
+}
+
+.main p {
+  margin-left: 16px;
+}
+
+.commercial {
+  margin-left: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 57px;
+  width: 192px;
+  height: 54px;
+}
+
+.footer {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $containerTextColor;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  opacity: 72%;
+}
+
+.footer p:first-child {
+  padding: 0 51px;
+}
+
+.footer p {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 760px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Lakes Regular';
+    background-color: $bgColor;
+    color: $text;
+    min-width: 768px;
+    height: 5000px;
+  }
+
+  .wrapper {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0);
+  }
+
+  .wrapper.inactive {
+    opacity: 0.1;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 88px;
+    margin-bottom: 24px;
+  }
+
+  .header__left-side > img {
+    display: inline-flex;
+  }
+
+  .header__left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 33%;
+  }
+
+  .header__right-side {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+  }
+
+  .header__hidden {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+  }
+
+  .main__header {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .main__header h1 {
+    margin-left: 12px;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    font-weight: 800;
+    font-family: 'TT Lakes Bold';
+  }
+
+  .main__services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .main__services::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .main__services p {
+    display: flex;
+    flex-shrink: 0;
+    height: 40px;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $containerTextColor;
+  }
+
+  .main__services p:hover {
+    border: 2px solid #b8ffec;
+    border-radius: 6px;
+    background-color: $bgCol;
+  }
+
+  // .container__read-more {
+  // }
+  .main__read-more {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main__read-more p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .read-more__arrow {
+    display: flex;
+    align-items: baseline;
+    margin-left: 16px;
+  }
+
+  .wallaper {
+    width: 360px;
+    height: 259px;
+  }
+
+  .main__repair h3 {
+    margin: 16px;
+  }
+
+  .main__repair h3 {
+    width: 320px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $containerTextColor;
+    font-weight: 200;
+  }
+
+  .repair__container {
+    display: flex;
+  }
+
+  .repair__container-wrapper {
+    display: flex;
+    padding: 16px;
+  }
+
+  .brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+    border: 1px solid $borderColor;
+    background-color: $bgCol;
+    border-radius: 6px;
+  }
+
+  .main__technical {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .main__technical h3 {
+    margin-left: 16px;
+    color: $containerTextColor;
+    width: 768px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 200;
+  }
+
+  .technical__container {
+    display: flex;
+  }
+
+  .techniacal__container-wrapper {
+    display: flex;
+    padding: 16px;
+  }
+
+  .technical__info {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 240px;
+    height: 160px;
+    padding: 16px;
+    border: 1px solid $borderColor;
+    background-color: $bgCol;
+  }
+
+  .technical__info p {
+    color: $text;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .technical__info a {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 16px;
+  }
+
+  .main__price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .main__price h3 {
+    margin-left: 16px;
+    color: $containerTextColor;
+    width: 320px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 200;
+  }
+
+  .price__container {
+    display: flex;
+  }
+
+  .price__container-wrapper {
+    display: flex;
+    padding: 16px;
+  }
+
+  .price__items {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 200px;
+    border: 1px solid $borderColor;
+    background-color: $bgCol;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  .price__items p {
+    color: $containerTextColor;
+    margin-bottom: 4px;
+  }
+
+  .price__items span {
+    color: $text;
+    margin-left: 16px;
+  }
+
+  .uslugi {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price {
+    margin: 16px 0;
+  }
+
+  .term {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .term__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .term img {
+    margin-right: 16px;
+  }
+
+  .main p {
+    margin-left: 16px;
+  }
+
+  .commercial {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 57px;
+    margin-top: 16px;
+  }
+
+  .footer {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // text-align: center;
+    color: $containerTextColor;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    opacity: 72%;
+  }
+
+  .footer > p:first-child {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 32px;
+  }
+
+  .footer > p:last-child {
+    text-align: right;
+    padding-left: 16px;
+    width: 220px;
+    height: 48px;
+  }
+
+  .footer > p:nth-child(2) {
+    margin: 0 40px 0 35px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Lakes Regular';
+    background-color: $bgColor;
+    color: $text;
+    min-width: 1440px;
+    height: 5000px;
+  }
+
+  .body__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu__burger {
+    display: flex;
+    flex-direction: column;
+    background-color: $bgColor;
+    width: 320px;
+    height: 100%;
+    position: fixed;
+    float: left;
+    transform: translateX(0);
+  }
+
+  .wrapper {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(320px);
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 24px;
+    height: 88px;
+    margin-bottom: 24px;
+  }
+
+  .header__hidden {
+    display: none;
+  }
+
+  .header__left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 0;
+  }
+
+  .header__right-side {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 0;
+    text-decoration: none;
+  }
+
+  .header__right-side > img {
+    display: none;
+  }
+
+  .header__right-side > a:nth-child(3)::before {
+    content: 'Оставить заявку';
+  }
+
+  .header__right-side > a:nth-child(4)::before {
+    content: 'Статус ремонта';
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
+  }
+
+  .main__header {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .main__header h1 {
+    margin-left: 12px;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    font-weight: 800;
+    font-family: 'TT Lakes Bold';
+  }
+
+  .main__services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .main__services::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .main__services p {
+    display: flex;
+    flex-shrink: 0;
+    height: 40px;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $containerTextColor;
+  }
+
+  .main__services p:hover {
+    border: 2px solid #b8ffec;
+    border-radius: 6px;
+    background-color: $bgCol;
+  }
+
+  // .container__read-more {
+  // }
+  .main__read-more {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main__read-more p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .read-more__arrow {
+    display: flex;
+    align-items: baseline;
+    margin-left: 16px;
+  }
+
+  .wallaper {
+    width: 360px;
+    height: 259px;
+  }
+
+  .main__repair h3 {
+    margin: 16px;
+  }
+
+  .main__repair h3 {
+    width: 320px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $containerTextColor;
+    font-weight: 200;
+  }
+
+  .repair__container {
+    display: flex;
+  }
+
+  .repair__container-wrapper {
+    display: flex;
+    padding: 16px;
+  }
+
+  .brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+    border: 1px solid $borderColor;
+    background-color: $bgCol;
+    border-radius: 6px;
+  }
+
+  .main__technical {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .main__technical h3 {
+    margin-left: 16px;
+    color: $containerTextColor;
+    width: 768px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 200;
+  }
+
+  .technical__container {
+    display: flex;
+  }
+
+  .techniacal__container-wrapper {
+    display: flex;
+    padding: 16px;
+  }
+
+  .technical__info {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 240px;
+    height: 160px;
+    padding: 16px;
+    border: 1px solid $borderColor;
+    background-color: $bgCol;
+  }
+
+  .technical__info p {
+    color: $text;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .technical__info a {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 16px;
+  }
+
+  .main__price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .main__price h3 {
+    margin-left: 16px;
+    color: $containerTextColor;
+    width: 320px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 200;
+  }
+
+  .price__container {
+    display: flex;
+  }
+
+  .price__container-wrapper {
+    display: flex;
+    padding: 16px;
+  }
+
+  .price__items {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 200px;
+    border: 1px solid $borderColor;
+    background-color: $bgCol;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  .price__items p {
+    color: $containerTextColor;
+    margin-bottom: 4px;
+  }
+
+  .price__items span {
+    color: $text;
+    margin-left: 16px;
+  }
+
+  .uslugi {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price {
+    margin: 16px 0;
+  }
+
+  .term {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .term__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .term img {
+    margin-right: 16px;
+  }
+
+  .main p {
+    margin-left: 16px;
+  }
+
+  .commercial {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 57px;
+    margin-top: 16px;
+  }
+
+  .footer {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // text-align: center;
+    color: $containerTextColor;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    opacity: 72%;
+  }
+
+  .footer > p:first-child {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 32px;
+  }
+
+  .footer > p:last-child {
+    text-align: right;
+    padding-left: 16px;
+    width: 220px;
+    height: 48px;
+  }
+
+  .footer > p:nth-child(2) {
+    margin: 0 40px 0 35px;
+  }
+}
