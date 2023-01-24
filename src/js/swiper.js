@@ -1,92 +1,130 @@
+import '../../node_modules/swiper'
+
 import Swiper, { Navigation, Pagination } from 'swiper'
 
-let brandsSwiper
-let technicalSwiper
-let priceSwiper
+import 'swiper/modules/pagination/pagination.scss'
 
-const repair = document.querySelector('.repair__container')
-const technical = document.querySelector('.technical__container')
-const price = document.querySelector('.price__container')
+let repairSwiper = document.querySelector('.repair__container')
+
+let technicalSwiper = document.querySelector('.swiper__technical')
+let priceSwiper = document.querySelector('.swiper__price')
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth <= '500') {
+  if (window.innerWidth <= 700) {
     if ('swiper-wrapper'.length > 0) {
-      let brandsSwiper = new Swiper('.repair__container', {
+      let repairSwiper = new Swiper('.swiper-repair', {
         modules: [Pagination],
         slidesPerView: 1.3,
         loop: true,
         spaceBetween: 16,
-        pagination: {
+        Pagination: {
           el: '.swiper-pagination',
           type: 'bullets',
           clickable: true
         }
       })
 
-      let technicalSwiper = new Swiper('.technical__container', {
-        modules: { Navigation, Pagination },
-        slidesPerView: 1.3,
-        loop: true,
-        spaceBetween: 16
-      })
-
-      let priceSwiper = new Swiper('.price__container', {
-        modules: { Navigation, Pagination },
-        slidesPerView: 1.2,
-        loop: true,
-        spaceBetween: 16
-      })
-    } else {
-      brandsSwiper.destroy()
-      technicalSwipe.destroy()
-      priceSwiper.destroy()
-    }
-  } else if (window.innerWidth >= '700') {
-    if ('wiper-wrappers'.length > 0) {
-    }
-  }
-})
-
-window.addEventListener('load', () => {
-  if (window.innerWidth <= '500') {
-    if ('swiper-wrapper'.length > 0) {
-      let brandsSwiper = new Swiper('.repair__container', {
-        modules: [Navigation, Pagination],
+      let technicalSwiper = new Swiper('.swiper-technical', {
+        modules: [Pagination],
         slidesPerView: 1.3,
         loop: true,
         spaceBetween: 16,
-        breakpoints: {
-          760: {
-            enabled: false
-          }
+        Pagination: {
+          el: '.swiper-pagination__technical',
+          type: 'bullets',
+          clickable: true
         }
-        // pagination: {
-        //   el: '.swiper-pagination',
-        //   type: 'bullets',
-        //   clickable: true
-        // }
       })
 
-      let technicalSwiper = new Swiper('.technical__container', {
-        modules: [Navigation, Pagination],
-        slidesPerView: 1.3,
-        loop: true,
-        spaceBetween: 16
-      })
-
-      let priceSwiper = new Swiper('.price__container', {
-        modules: [Navigation, Pagination],
+      let priceSwiper = new Swiper('.swiper-price', {
+        modules: [Pagination],
         slidesPerView: 1.2,
         loop: true,
-        spaceBetween: 16
+        spaceBetween: 16,
+        Pagination: {
+          el: '.swiper-pagination__price',
+          type: 'bullets',
+          clickable: true
+        }
       })
     } else {
       brandsSwiper.destroy()
       technicalSwiper.destroy()
       priceSwiper.destroy()
     }
-  } else if (window.innerWidth >= '700') {
+  } else if (window.innerWidth >= 701) {
+    if ('swiper-wrappers'.length > 0) {
+    }
+  }
+})
+
+window.addEventListener('load', () => {
+  if (window.innerWidth <= '700') {
+    if ('swiper-wrapper'.length > 0) {
+      let repairSwiper = new Swiper('.swiper-repair', {
+        modules: [Pagination],
+        slidesPerView: 1.3,
+        loop: true,
+        spaceBetween: 16,
+        Pagination: {
+          el: '.swiper-pagination__repair',
+          type: 'bullets',
+          clickable: true
+        }
+      })
+
+      let technicalSwiper = new Swiper('.swiper-technical', {
+        modules: [Pagination],
+        slidesPerView: 1.3,
+        loop: true,
+        spaceBetween: 16,
+        Pagination: {
+          el: '.swiper-pagination__technical',
+          type: 'bullets',
+          clickable: true
+        }
+      })
+
+      let priceSwiper = new Swiper('.swiper-price', {
+        modules: [Pagination],
+        slidesPerView: 1.2,
+        loop: true,
+        spaceBetween: 16,
+        Pagination: {
+          el: '.swiper-pagination__price',
+          type: 'bullets',
+          clickable: true
+        }
+      })
+    } else {
+      brandsSwiper.destroy()
+      technicalSwipe.destroy()
+      priceSwiper.destroy()
+    }
+  } else if (window.innerWidth >= '701') {
     if ('wiper-wrappers'.length > 0) {
     }
   }
 })
+
+// window.addEventListener('resize', () => {
+//   if (window.innerWidth <= 768 && repairSwiper.dataset.mobile == 'false') {
+//     myRepairSwiper = new Swiper('.repair__container', {
+//       modules: [Pagination],
+//       // slidesPerView: 1.3,
+//       loop: true,
+//       spaceBetween: 16,
+//       pagination: {
+//         el: '.swiper-pagination__repair',
+//         clickable: true
+//       }
+//     })
+//     repairSwiper.dataset.mobile = 'true'
+//   }
+//   if (window.innerWidth > 768) {
+//     repairSwiper.dataset.mobile = 'false'
+//     if (repairSwiper.classList.contains('.swiper-initializet')) {
+//       myRepairSwiper.destroy()
+//     }
+//   }
+// })

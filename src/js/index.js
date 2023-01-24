@@ -7,3 +7,5 @@ import '../js/windowControl.js'
 import '../js/btn.js'
 
 import '../js/read-more.js'
+
+import '../js/show-more.js'

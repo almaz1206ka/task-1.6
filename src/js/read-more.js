@@ -4,42 +4,97 @@ const textHidden = document.querySelector('.hidden')
 
 const textHiddens = document.querySelector('.hiddens')
 
-window.addEventListener('load', () => {
-  if (window.innerWidth <= '759') {
-    button.addEventListener('click', () => {
-      if (textHiddens.style.display == 'inline-block') {
-        textHiddens.style.display = 'none'
-      } else {
-        textHiddens.style.display = 'inline-block'
-      }
-    })
-  } else if (window.innerWidth >= '760') {
-    button.addEventListener('click', () => {
-      if (textHidden.style.display == 'contents') {
-        textHidden.style.display = 'none'
-      } else {
-        textHidden.style.display = 'contents'
-      }
-    })
-  }
-})
+const text = document.querySelector('.read-more')
 
-window.addEventListener('resize', () => {
-  if (window.innerWidth <= '759') {
-    button.addEventListener('click', () => {
-      if (textHiddens.style.display == 'inline-block') {
-        textHiddens.style.display = 'none'
-      } else {
-        textHiddens.style.display = 'inline-block'
-      }
-    })
-  } else if (window.innerWidth >= '760') {
-    button.addEventListener('click', () => {
-      if (textHidden.style.display == 'contents') {
-        textHidden.style.display = 'none'
-      } else {
-        textHidden.style.display = 'contents'
-      }
-    })
+const textHiddene = document.querySelector('.hiddene')
+
+const readMoreText = document.querySelector('.main__read-more__text')
+
+const test = readMoreText.lastElementChild
+console.log(test)
+
+button.onclick = function () {
+  textHiddens.classList.toggle('active')
+  textHidden.classList.toggle('_active')
+  textHiddene.classList.toggle('__active')
+  button.classList.toggle('active')
+  if (text.textContent == 'Читать далее') {
+    text.textContent = 'Скрыть'
+  } else {
+    text.textContent = 'Читать далее'
   }
-})
+}
+
+// window.addEventListener('load', () => {
+//   if (window.matchMedia('(max-width: 759px)').matches) {
+//     button.addEventListener('click', () => {
+//       textHiddens.classList.toggle('active')
+//       textHidden.classList.toggle('_active')
+//       textHiddene.classList.toggle('__active')
+//       button.classList.toggle('active')
+//       if (text.textContent == 'Читать далее') {
+//         text.textContent = 'Скрыть'
+//       } else {
+//         text.textContent = 'Читать далее'
+//       }
+//     })
+//   } else if (window.matchMedia('(max-width: 1390)').matches) {
+//     button.addEventListener('click', () => {
+//       textHidden.classList.toggle('_active')
+//       textHiddene.classList.toggle('__active')
+//       button.classList.toggle('active')
+//       if (text.textContent == 'Читать далее') {
+//         text.textContent = 'Скрыть'
+//       } else {
+//         text.textContent = 'Читать далее'
+//       }
+//     })
+//   } else if (window.matchMedia('(min-width: 1391)').matches) {
+//     button.addEventListener('click', () => {
+//       button.classList.toggle('active')
+//       textHiddene.classList.toggle('__active')
+//       if (text.textContent == 'Читать далее') {
+//         text.textContent = 'Скрыть'
+//       } else {
+//         text.textContent = 'Читать далее'
+//       }
+//     })
+//   }
+// })
+
+// window.addEventListener('resize', () => {
+//   if (window.matchMedia('(max-width: 759px)').matches) {
+//     button.addEventListener('click', () => {
+//       textHiddens.classList.toggle('active')
+//       textHidden.classList.toggle('_active')
+//       textHiddene.classList.toggle('__active')
+//       button.classList.toggle('active')
+//       if (text.textContent == 'Читать далее') {
+//         text.textContent = 'Скрыть'
+//       } else {
+//         text.textContent = 'Читать далее'
+//       }
+//     })
+//   } else if (window.matchMedia('(max-width: 1390)').matches) {
+//     button.addEventListener('click', () => {
+//       textHidden.classList.toggle('_active')
+//       textHiddene.classList.toggle('__active')
+//       button.classList.toggle('active')
+//       if (text.textContent == 'Читать далее') {
+//         text.textContent = 'Скрыть'
+//       } else {
+//         text.textContent = 'Читать далее'
+//       }
+//     })
+//   } else if (window.matchMedia('(min-width: 1391)').matches) {
+//     button.addEventListener('click', () => {
+//       button.classList.toggle('active')
+//       textHiddene.classList.toggle('__active')
+//       if (text.textContent == 'Читать далее') {
+//         text.textContent = 'Скрыть'
+//       } else {
+//         text.textContent = 'Читать далее'
+//       }
+//     })
+//   }
+// })
