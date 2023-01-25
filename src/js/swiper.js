@@ -4,8 +4,7 @@ import Swiper, { Navigation, Pagination } from 'swiper'
 
 import 'swiper/modules/pagination/pagination.scss'
 
-let repairSwiper = document.querySelector('.repair__container')
-
+let repairSwiper = document.querySelector('.swiper-repair')
 let technicalSwiper = document.querySelector('.swiper__technical')
 let priceSwiper = document.querySelector('.swiper__price')
 

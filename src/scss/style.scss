@@ -22,6 +22,14 @@
     url('../fonts/TTLakes-Bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'TT Lakes Medium';
+  font-style: normal;
+  src: url('../fonts/TTLakes-Medium.eot') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.ttf') format('ttf'),
+    url('../fonts/TTLakes-Medium.woff') format('woff');
+}
+
 * {
   padding: 0;
   margin: 0;

@@ -11,9 +11,8 @@ $bgCol: #ffffff;
   height: 100%;
   transition: 2ms linear;
   position: absolute;
-  right: -20px;
-  z-index: 3;
-  opacity: 0;
+  right: -440px;
+  z-index: 0;
 }
 
 .feedback__container.open {
@@ -24,7 +23,6 @@ $bgCol: #ffffff;
   background-color: $bgColor;
   position: absolute;
   right: 0;
-  opacity: 1;
   transition: 0.5s ease;
 }
 
@@ -116,7 +114,7 @@ $bgCol: #ffffff;
     height: 100%;
     transition: 0.5s ease;
     position: absolute;
-    right: 0;
+    right: -440px;
     z-index: 0;
   }
 
@@ -140,7 +138,7 @@ $bgCol: #ffffff;
     width: 440px;
     background-color: $bgColor;
     position: absolute;
-    right: 0;
+    right: -530px;
     transition: 0.5s ease;
     z-index: 3;
   }

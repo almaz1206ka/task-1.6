@@ -10,9 +10,8 @@ $bgCol: #ffffff;
   width: 320px;
   transition: 2ms linear;
   position: absolute;
-  right: -20px;
+  right: -440px;
   z-index: 3;
-  opacity: 0;
 }
 
 .call__feedback.open {
@@ -24,7 +23,6 @@ $bgCol: #ffffff;
   transition: 0.5s ease;
   position: absolute;
   right: 0;
-  opacity: 1;
 }
 
 .call__feedback-header img {
@@ -98,8 +96,8 @@ $bgCol: #ffffff;
     width: 320px;
     transition: 0.5s ease;
     position: absolute;
+    right: -440px;
     z-index: 0;
-    opacity: 0;
   }
 
   .call__feedback.open {
@@ -125,7 +123,7 @@ $bgCol: #ffffff;
     transition: 1.3s ease;
     z-index: 3;
     position: absolute;
-    opacity: 0;
+    right: -550px;
   }
 
   .call__feedback.open {
@@ -138,7 +136,6 @@ $bgCol: #ffffff;
     transition: 0.5s ease;
     position: fixed;
     right: 0;
-    opacity: 1;
   }
 
   .call__feedback-header {
