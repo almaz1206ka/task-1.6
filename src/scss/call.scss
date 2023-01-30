@@ -7,11 +7,12 @@ $bgCol: #ffffff;
 .call__feedback {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  transition: 2ms linear;
+  width: 100vw;
+  transition: linear 0.3s;
   position: absolute;
-  right: -440px;
-  z-index: 3;
+  right: -650px;
+  z-index: 0;
+  background-color: $bgColor;
 }
 
 .call__feedback.open {
@@ -20,7 +21,7 @@ $bgCol: #ffffff;
   height: 100%;
   z-index: 3;
   background-color: $bgColor;
-  transition: 0.5s ease;
+  transition: linear 0.3s;
   position: absolute;
   right: 0;
 }
@@ -94,7 +95,7 @@ $bgCol: #ffffff;
     display: flex;
     flex-direction: column;
     width: 320px;
-    transition: 0.5s ease;
+    transition: linear 0.3s;
     position: absolute;
     right: -440px;
     z-index: 0;
@@ -103,14 +104,14 @@ $bgCol: #ffffff;
   .call__feedback.open {
     display: flex;
     flex-direction: column;
+    width: 320px;
     height: 1024px;
     z-index: 3;
     background-color: $bgColor;
     position: fixed;
     right: 0;
-    transition: 0.5s ease;
+    transition: linear 0.3s;
     box-shadow: 16px 0 52px #0e185033;
-    opacity: 1;
   }
 }
 
@@ -120,7 +121,7 @@ $bgCol: #ffffff;
     flex-direction: column;
     width: 440px;
     background-color: $bgColor;
-    transition: 1.3s ease;
+    transition: linear 0.3s;
     z-index: 3;
     position: absolute;
     right: -550px;
@@ -133,7 +134,7 @@ $bgCol: #ffffff;
     height: 100%;
     z-index: 3;
     background-color: $bgColor;
-    transition: 0.5s ease;
+    transition: linear 0.3s;
     position: fixed;
     right: 0;
   }

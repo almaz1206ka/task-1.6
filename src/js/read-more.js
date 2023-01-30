@@ -10,9 +10,6 @@ const textHiddene = document.querySelector('.hiddene')
 
 const readMoreText = document.querySelector('.main__read-more__text')
 
-const test = readMoreText.lastElementChild
-console.log(test)
-
 button.onclick = function () {
   textHiddens.classList.toggle('active')
   textHidden.classList.toggle('_active')

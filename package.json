@@ -55,6 +55,6 @@
     }
   },
   "dependencies": {
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.6"
   }
 }

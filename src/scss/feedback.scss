@@ -5,14 +5,14 @@ $bgColor: #f8f8f8;
 $bgCol: #ffffff;
 
 .feedback__container {
-  display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 100vw;
   height: 100%;
-  transition: 2ms linear;
+  transition: linear 0.3s;
   position: absolute;
-  right: -440px;
+  right: -650px;
   z-index: 0;
+  background-color: $bgColor;
 }
 
 .feedback__container.open {
@@ -23,7 +23,7 @@ $bgCol: #ffffff;
   background-color: $bgColor;
   position: absolute;
   right: 0;
-  transition: 0.5s ease;
+  transition: linear 0.3s;
 }
 
 .feedback__container-header img {
@@ -112,7 +112,7 @@ $bgCol: #ffffff;
     flex-direction: column;
     width: 320px;
     height: 100%;
-    transition: 0.5s ease;
+    transition: linear 0.3s;
     position: absolute;
     right: -440px;
     z-index: 0;
@@ -121,12 +121,13 @@ $bgCol: #ffffff;
   .feedback__container.open {
     display: flex;
     flex-direction: column;
+    width: 320px;
     height: 100%;
     z-index: 3;
     background-color: $bgColor;
     position: fixed;
     right: 0;
-    transition: 0.5s ease;
+    transition: linear 0.3s;
     box-shadow: 16px 0 52px #0e185033;
   }
 }
@@ -139,7 +140,7 @@ $bgCol: #ffffff;
     background-color: $bgColor;
     position: absolute;
     right: -530px;
-    transition: 0.5s ease;
+    transition: linear 0.3s;
     z-index: 3;
   }
 
@@ -151,7 +152,7 @@ $bgCol: #ffffff;
     background-color: $bgColor;
     position: fixed;
     right: 0;
-    transition: 0.5s ease;
+    transition: linear 0.3s;
   }
 
   .feedback__container-header {

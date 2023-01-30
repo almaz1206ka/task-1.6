@@ -3,6 +3,8 @@ $bgCol: #ffffff;
 $text: #1b1c21;
 $containerTextColor: #7e7e82;
 $borderColor: #eaeaea;
+$paginationBulletActive: #b5b6bc;
+$paginationBullet: #dddddd;
 
 body {
   margin: 0;
@@ -12,7 +14,7 @@ body {
   background-color: $bgColor;
   color: $text;
   min-width: 320px;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .body__container {
@@ -122,14 +124,14 @@ body {
   padding: 8px 16px;
 }
 
-// .main__read-more__text {
-//   padding: 8px 16px;
-// }
+.main__read-more__text {
+  padding: 8px 16px;
+}
 
 .read-more__arrow {
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  padding: 8px 16px;
 }
 
 .read-more__arrow p {
@@ -169,7 +171,7 @@ body {
 }
 
 .main__repair {
-  padding: 40px 16px;
+  padding: 20px 16px;
 }
 
 .main__repair h3 {
@@ -183,7 +185,7 @@ body {
 .repair__container {
   display: flex;
   flex-direction: column;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .repair__container__768 {
@@ -206,16 +208,32 @@ body {
   border: 1px solid $borderColor;
   background-color: $bgCol;
   border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.hp {
+  height: 40px;
+}
+
+.swiper-pagination__repair {
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: $paginationBullet !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: $paginationBulletActive !important;
 }
 
 .main__technical {
   display: flex;
   flex-direction: column;
-  padding: 40px 16px;
+  padding: 20px 16px;
 }
 
 .main__technical h3 {
-  margin-left: 16px;
   color: $containerTextColor;
   min-width: 320px;
   font-size: 16px;
@@ -235,7 +253,7 @@ body {
 
 .techniacal__container-wrapper {
   display: flex;
-  padding: 16px;
+  padding: 16px 0;
 }
 
 .technical__info {
@@ -261,10 +279,7 @@ body {
   margin-right: 16px;
 }
 .swiper-pagination__technical {
-  display: flex;
-  margin-top: 16px;
-  background-color: #1b1c21;
-  margin-left: 8px;
+  text-align: center;
 }
 
 .main__price {
@@ -317,6 +332,10 @@ body {
 
 .price__items span {
   color: $text;
+}
+
+.swiper-pagination__price {
+  text-align: center;
 }
 
 .uslugi {
@@ -390,7 +409,6 @@ body {
   }
 
   .wrapper {
-    min-width: 100vw;
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -568,7 +586,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
-    width: 240px;
+    width: 224px;
     height: 72px;
     padding: 16px;
     border: 1px solid $borderColor;
@@ -577,8 +595,17 @@ body {
     margin-bottom: 16px;
   }
 
-  .brands__768.hidden {
+  .brands__768_hidden {
     display: none;
+  }
+
+  .brands__768_hidden.active {
+    display: flex;
+  }
+
+  .show-more.active {
+    transform: rotate(180deg);
+    transition: 0.1s;
   }
 
   .repair__container__show-more {
@@ -588,6 +615,7 @@ body {
 
   .repair__container__show-more p {
     padding-left: 16px;
+    font-weight: 600;
   }
 
   .main__technical {
@@ -638,21 +666,23 @@ body {
   }
 
   .technical__info__768:last-child {
-    border: none;
-    background-color: $bgColor;
-  }
-
-  .technical__info__768.hidden {
     display: none;
   }
 
-  .technical__info__768.active {
+  .technical__info__768_hidden {
+    display: none;
+  }
+
+  .technical__info__768_hidden.active {
     display: flex;
+  }
+
+  .technical__info__768_hidden.active:last-child {
+    opacity: 0;
   }
 
   .technical__info__768 p {
     color: $text;
-    font-weight: 600;
   }
 
   .technical__info__768 a {
@@ -661,12 +691,19 @@ body {
     margin-right: 16px;
   }
 
+  .show.active {
+    transform: rotate(180deg);
+    transition: 0.1s;
+  }
+
   .technical__container__show-more {
     display: flex;
+    padding-left: 16px;
   }
 
   .technical__container__show-more p {
     padding-left: 16px;
+    font-weight: 600;
   }
 
   .main__price {
@@ -780,12 +817,13 @@ body {
     background-color: $bgColor;
     color: $text;
     min-width: 1440px;
+    overflow-x: hidden;
   }
 
   .body__container {
     display: flex;
     flex-direction: row;
-    min-width: 100%;
+    width: 100vw;
   }
 
   .wrapper {
@@ -815,7 +853,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 24px 0 8px 0;
+    margin: 24px 0 8px 8px;
     min-width: 1120px;
   }
 
@@ -957,7 +995,7 @@ body {
     padding: 16px;
   }
 
-  .brands {
+  .brands__768 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -968,6 +1006,14 @@ body {
     border: 1px solid $borderColor;
     background-color: $bgCol;
     border-radius: 6px;
+  }
+
+  .brands__768_hidden {
+    display: none;
+  }
+
+  .brands__768_hidden:last-child {
+    opacity: 0;
   }
 
   .main__technical {
@@ -999,10 +1045,6 @@ body {
     padding: 16px;
   }
 
-  .techniacal__container-wrapper .technical__info:last-child {
-    display: none;
-  }
-
   .technical__info__768 {
     display: flex;
     justify-content: space-between;
@@ -1015,6 +1057,10 @@ body {
   }
 
   .technical__info__768:last-child {
+    display: none;
+  }
+
+  .technical__info__768_hidden {
     display: none;
   }
 
