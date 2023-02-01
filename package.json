@@ -1,7 +1,7 @@
 {
   "name": "web-last-block",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Требования к проекту",
   "keywords": [
     "web",
     "scss",
@@ -56,5 +56,13 @@
   },
   "dependencies": {
     "swiper": "^8.4.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almaz1206ka/task-1.6.git"
+  },
+  "bugs": {
+    "url": "https://github.com/almaz1206ka/task-1.6/issues"
+  },
+  "homepage": "https://github.com/almaz1206ka/task-1.6#readme"
 }

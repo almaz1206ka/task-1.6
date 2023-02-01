@@ -92,6 +92,20 @@ window.addEventListener('resize', () => {
 
 window.addEventListener('load', () => {
   if (window.innerWidth < 1400) {
+    // if (
+    //   openMenu.classList.contains('inactive') &&
+    //   closeMenu.classList.contains('active') &&
+    //   feedback.classList.contains('open') &&
+    //   callFeed.classList.contains('open')
+    // ) {
+    //   window.onclick = function () {
+    //     openMenu.classList.remove('inactive')
+    //     closeMenu.classList.remove('active')
+    //     feedback.classList.remove('open')
+    //     callFeed.classList.remove('open')
+    //   }
+    // }
+
     btnOpenMenu.onclick = function () {
       closeMenu.classList.add('active')
       openMenu.classList.add('inactive')
