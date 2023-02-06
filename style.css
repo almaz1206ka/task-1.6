@@ -5,7 +5,8 @@ body {
   font-family: 'TT Lakes Regular';
   background-color: #f8f8f8;
   color: #1b1c21;
-  min-width: 320px; }
+  min-width: 320px;
+  overflow-x: hidden; }
 
 .body__container {
   display: flex; }
