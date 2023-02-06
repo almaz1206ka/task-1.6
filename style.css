@@ -930,6 +930,9 @@ body {
   color: #7e7e82;
   cursor: default; }
 
+.lang a:hover {
+  cursor: default; }
+
 @media (min-width: 760px) {
   * {
     padding: 0;
@@ -985,12 +988,7 @@ body {
     text-decoration: none;
     color: #1b1c21; }
   .footer__tel-number {
-    margin: 16px 0; }
-  .lang {
-    cursor: default; }
-  .lang a:focus {
-    color: #7e7e82;
-    cursor: default; } }
+    margin: 16px 0; } }
 
 @media (min-width: 1400px) {
   .menu__burger {
@@ -1040,12 +1038,7 @@ body {
   .menu__footer a:nth-child(3) {
     margin: 16px 0 12px 0; }
   .footer__tel-number {
-    margin: 16px 0; }
-  .lang {
-    cursor: default; }
-  .lang a:focus {
-    color: #7e7e82;
-    cursor: default; } }
+    margin: 16px 0; } }
 
 .feedback__container {
   flex-direction: column;
