@@ -550,7 +550,8 @@ body {
     padding: 16px; }
   .price__items {
     display: inline-grid;
-    grid-template-columns: 0.75fr 130px 120px 50px;
+    grid-template-columns: 0.75fr 0.25fr 0.25fr 0.25fr;
+    justify-content: space-around;
     background-color: #ffffff;
     min-width: 720px;
     height: 64px;
@@ -609,8 +610,7 @@ body {
     font-family: 'TT Lakes Regular';
     background-color: #f8f8f8;
     color: #1b1c21;
-    min-width: 1440px;
-    overflow-x: hidden; }
+    min-width: 1440px; }
   .body__container {
     display: flex;
     flex-direction: row;
@@ -795,7 +795,7 @@ body {
     display: grid;
     padding: 16px; }
   .price__items {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr 0.25fr;
     justify-content: space-between;
     background-color: #ffffff;
@@ -1046,7 +1046,7 @@ body {
   height: 100%;
   transition: linear 0.3s;
   position: absolute;
-  right: -650px;
+  right: -760px;
   z-index: 0;
   background-color: #f8f8f8;
   overflow-y: scroll; }
@@ -1240,7 +1240,7 @@ body {
   width: 100vw;
   transition: linear 0.3s;
   position: absolute;
-  right: -650px;
+  right: -760px;
   z-index: 0;
   background-color: #f8f8f8; }
 
