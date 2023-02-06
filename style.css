@@ -1048,7 +1048,11 @@ body {
   position: absolute;
   right: -650px;
   z-index: 0;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  overflow-y: scroll; }
+
+.feedback__container.open::-webkit-scrollbar {
+  width: 0; }
 
 .feedback__container.open {
   display: flex;
