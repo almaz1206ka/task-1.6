@@ -1258,7 +1258,7 @@ body {
   height: 100%;
   background-color: #f8f8f8;
   transition: linear 0.3s;
-  position: absolute;
+  position: fixed;
   right: 0;
   z-index: 13; }
 
